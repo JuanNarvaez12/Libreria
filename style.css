@@ -63,7 +63,7 @@ a:hover{
     height: 100vh;
     display: grid;
     place-items: center;
-    background-image: url('../Imagenes/libreria.jpg');
+    background-image: url('libreria.jpg');
     background-size: cover; /* Para que la imagen cubra todo el fondo */
     background-repeat: no-repeat; /* Para evitar la repetición de la imagen */
     align-content: center;
