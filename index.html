@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Liberia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Bienvenido</h1>
+            <ul>
+                <li><i class="fa-solid fa-house"></i><a href="Inicio.html">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="busqueda.html">Libros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login">
+        <div class="form-container">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
+            <div class="title-box">
+                <h3>Crear nueva cuenta</h3>
+            </div>
+            <div class="icons">
+                <a href="" alt=""><span class="flaticon-008-youtube"></span></a>
+                <a href=""><span class="flaticon-001-facebook"></span></a>
+                <a href=""><span class="flaticon-003-whatsapp"></span></a>
+                <a href=""><span class="flaticon-011-instagram"></span></a>
+                <a href=""><span class="flaticon-002-twitter"></span></a>
+            </div>
+        </div>
+        <div class="form-box">
+            <form class="form" name="formulario" method="POST" action="script.php" onsubmit="return validateForm()">
+                <label for="nombre" class="label">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" placeholder="username" class="input user-name">
+                
+                <label for="email" class="label">Correo</label>
+                <input type="text" id="email" name="Correo" placeholder="example@gmail.com" class="input input-email">
+                
+                <label for="Password" class="label">Clave</label>
+                <input type="password" id="Password" name="Clave" placeholder="************" class="input input-password" oninput="validatePassword()">
+
+                <div id="password-error" class="error-message"></div>
+                
+                <input type="submit" value="Enviar" class="primary-button login-button">
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function validatePassword() {
+            var passwordInput = document.getElementById("Password");
+            var password = passwordInput.value;
+
+            var passwordError = document.getElementById("password-error");
+
+            // Puedes personalizar las reglas de validación de la contraseña aquí
+            if (password.length < 8) {
+                passwordError.textContent = "La contraseña debe tener al menos 8 caracteres.";
+            } else {
+                passwordError.textContent = ""; // Limpia el mensaje de error
+            }
+        }
+
+        function validateForm() {
+            var password = document.getElementById("Password").value;
+
+            
+            if (password.length < 8) {
+                var passwordError = document.getElementById("password-error");
+                passwordError.textContent = "La contraseña debe tener al menos 8 caracteres.";
+                alert("La contraseña no cumple con los requisitos.");
+                return false; 
+            }
+            return true; 
+        }
+    </script>
+</body>
+</html>
+

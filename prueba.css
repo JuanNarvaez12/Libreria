@@ -1,0 +1,137 @@
+
+body{
+    margin: 0;
+    background-image: url(vacie-sobremesa-madera-estantes-falta-definicion-fondo-libreria_7188-619.avif);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 100%;
+    
+}
+nav {
+    background-color: #b3a9a9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+nav h1{
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 45px;
+}
+
+ul li{
+    display: inline-block;
+    padding:  0px 20px;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:white;
+}
+
+.header{
+    padding: 20px;
+    margin:20px ;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 520px;
+    gap: 40px;
+}
+.presentacion{
+    align-self: center;
+}
+.presentacion h1{
+    margin:  2px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+.presentacion p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+
+/* Contenedor principal del formulario */
+.login {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+
+.form-container {
+    margin: 30px;
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    border-color: black 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    
+    
+}
+/* Título */
+.title-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left; /* Alinear el título a la izquierda */
+}
+
+/* Etiquetas y campos de entrada */
+.label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #000000;
+    text-align: left; /* Alinear las etiquetas a la izquierda */
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botón de envío */
+.primary-button {
+    width: 390px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 5px;
+    background-color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform:uppercase ;
+    font-size: 20px;
+}
+
+.primary-button:hover {
+    background-color: #0056b3;
+}
+
