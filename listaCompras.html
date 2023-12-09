@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Perfil</title>
-     <link rel="stylesheet" href="compras.css">
+    <link rel="stylesheet" href="compras.css">
 </head>
 <body>
     <header>
@@ -20,10 +20,12 @@
     </header>
 
     <main>
-        <section id="informacion">
+        <section class="informacion" >
             <h2>Información Personal</h2>
-            <form>
-            <!-- Aquí irían campos para actualizar información personal -->
+        </section>
+        <section class="formulario">
+            <form class="form-container">
+                <!-- Aquí irían campos para actualizar información personal -->
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br><br>
                 <label for="email">Email:</label>
@@ -36,8 +38,8 @@
             <h2>Historial de Compras</h2>
             <!-- Aquí mostrarías la lista de compras -->
             <ul>
-                <li>Libro 1 - Fecha de compra: 01/01/2023</li>
-                <li>Libro 2 - Fecha de compra: 05/02/2023</li>
+                <li>Leidy Masacre - Fecha de compra: 01/01/2023</li>
+                <li>Don quijote de la mancha - Fecha de compra: 05/02/2023</li>
             </ul>
         </section>
 
@@ -45,8 +47,8 @@
             <h2>Lista de Deseos</h2>
             <!-- Aquí mostrarías la lista de deseos -->
             <ul>
-                <li>Libro A</li>
-                <li>Libro B</li>
+                <li>Ana Frank</li>
+                <li>El codigo Da Vinci</li>
             </ul>
         </section>
     </main>
